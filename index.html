@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https:                                                                     
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="img/inda.jpg" alt="">
+      <div>
+        <h1>Arnaysa Gardan </h1>
+        <p>Course: ASSOCIATION IN COMPUTER TECHNOLOGY</p>
+        <p>School: WESTERN MINDANAO STATE UNIVERSITY</p>
+      </div>
+    </div>
+    <div class="info-box">
+      <h2>about me!</h2>
+      <p id="about-me">I’m a motivated student passionate about technology, coding, and innovation. I enjoy building projects and learning new things.</p>
+      <button id="read-more">Read More</button>
+    </div>
+    <div class="info-box">
+      <h2>info</h2>
+      <ul>
+        <li>Birth: 09/24/05</li>
+        <li>Age: 19y/o </li>
+        <li>Loc: Poblacion, Siay Zamboanga Sibugay</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h2>Contact</h2>
+      <p>Email: arnaysadumaduingardan@gmail.com</p>
+      <p>Contact: 09090089798</p>
+      <button id="copy-email">Copy Email</button>
+    </div>
+  </div>
+    <script>
+document.getElementById('read-more').addEventListener('click', () => {
+      const aboutMeText = document.getElementById('about-me');
+      aboutMeText.innerHTML = 'I’m a motivated student passionate about technology, coding, and innovation. I enjoy building projects and learning new things. I’m excited to share my portfolio with you!';
+    });    document.getElementById('copy-email').addEventListener('click', () => {
+      navigator.clipboard.writeText('arnaysadumaduingardan@gmail.com');
+      alert(' copied to clipboard!');
+    });
+  </script>
+</body>
+</html>
